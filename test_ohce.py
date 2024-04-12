@@ -1,6 +1,8 @@
 "Permite gestionar y ejecutar pruebas unitarias. -->"
 import unittest
 
+import ohce
+
 class testohce(unittest.TestCase):
 
     def test_salu_6_12(self):
