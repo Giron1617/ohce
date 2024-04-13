@@ -11,4 +11,8 @@ def salu(nom,h):
         return "buenas tardes {}" .format(nom)
     
 def pro_p(p):
-     return "nn"
+     if p == "stop":
+         return "adios"
+     else:
+         ## el operador[::-1] puede invertir la cadena, en este caso 'p'.
+         return p[::-1]+ "\n bonita palabra"
