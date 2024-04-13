@@ -7,6 +7,6 @@ def salu(nom,h):
         return "buenas noches {}" .format(nom)
     elif h >=6 and h < 12:
         return "buenos dias {}" .format(nom)
-    elif h >=12 and h <20:
+    else:
         return "buenas tardes {}" .format(nom)
     
