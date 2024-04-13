@@ -10,3 +10,5 @@ def salu(nom,h):
     else:
         return "buenas tardes {}" .format(nom)
     
+def pro_p(p):
+     return "nn"

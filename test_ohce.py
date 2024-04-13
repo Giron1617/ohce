@@ -41,3 +41,22 @@ class testohce(unittest.TestCase):
 
         
         self.assertEqual(resu, "buenas noches Giron")
+
+    """
+    Test para la segunda y tercera parte del problema 'OHCE', usando la misma logica que los test anteriores.
+    
+    """
+
+    def test_ppalin(self):
+        palabra = "oto"
+        resu  = ohce.pro_p(palabra)
+
+        self.assertEqual(resu, "oto\n bonita palabra")
+
+    def test_stop(self):
+        
+        palabra = "stop"
+        resu= ohce.pro_p(palabra)
+
+       
+        self.assertEqual(resu, "adios")     
