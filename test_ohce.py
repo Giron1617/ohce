@@ -13,9 +13,31 @@ class testohce(unittest.TestCase):
     
         """
 
-        nombre = "juan"
+        nombre = "Juan"
         horas = 8
 
         resu = ohce.salu(nombre, horas)
 
-        self.assertEqual(resu, "buenos dias juan")
+        self.assertEqual(resu, "buenos dias Juan")
+
+
+    def test_salu_12_20(self):
+       
+        nombre = "Esteban"
+        horas = 15
+
+        
+
+        resu  = ohce.salu(nombre, horas)
+
+       
+        self.assertEqual(resu, "buenas tardes Esteban")
+
+    def test_salu_20_6(self):
+        
+        nombre = "Giron"
+        horas = 23
+        resu = ohce.salu(nombre, horas)
+
+        
+        self.assertEqual(resu, "buenas noches Giron")
