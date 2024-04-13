@@ -48,10 +48,10 @@ class testohce(unittest.TestCase):
     """
 
     def test_ppalin(self):
-        p = "oto"
+        p = "aeiiea"
         resu  = ohce.pro_p(p)
 
-        self.assertEqual(resu, "oto\n bonita palabra")
+        self.assertEqual(resu, "aeiiea bonita palabra")
 
     def test_stop(self):
         

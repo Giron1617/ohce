@@ -11,8 +11,16 @@ def salu(nom,h):
         return "buenas tardes {}" .format(nom)
     
 def pro_p(p):
-     if p == "stop":
+    ## el operador[::-1] puede invertir la cadena, en este caso 'p'.
+    p_i=p[::-1]
+
+
+    if p == "stop":
          return "adios"
-     else:
-         ## el operador[::-1] puede invertir la cadena, en este caso 'p'.
-         return p[::-1]+ "\n bonita palabra"
+    
+    ## sin este elif cualquier palabra saldria con la frase 'bonita palabra'.
+    elif p_i == p:
+         
+         return format(p_i)+ " bonita palabra"
+    
+    else: return format(p_i)
